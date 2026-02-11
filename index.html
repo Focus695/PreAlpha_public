@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 网页标签页（浏览器tab上的小图标）显示的favicon，已改为 @apps/web/public/images/logo-icon.png -->
+    <link rel="icon" type="image/png" href="/images/logo-pure.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PreAlpha - Smart Money Analysis for Prediction Markets" />
+    <title>PreAlpha - Smart Money Analysis</title>
+
+    <!-- Google Fonts: Inter + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- RainbowKit styles must load before custom styles -->
+    <link rel="stylesheet" href="/rainbowkit.css" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Import map removed - all dependencies bundled by Bun -->
+    <!-- This ensures single React instance and better performance -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

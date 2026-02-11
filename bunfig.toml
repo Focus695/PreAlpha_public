@@ -1,0 +1,35 @@
+# Bun Configuration
+# https://bun.sh/docs/runtime/bunfig
+
+[test]
+# Enable coverage reporting
+coverage = false
+
+# Test file patterns
+include = [
+  "**/*.test.ts",
+  "**/*.test.tsx",
+  "**/*.spec.ts",
+  "**/*.spec.tsx"
+]
+preload = ["./src/tests/setup.ts"]
+
+# Ignore patterns
+exclude = [
+  "**/node_modules/**",
+  "**/dist/**"
+]
+
+# Timeout per test in milliseconds
+timeout = 5000
+
+# Fail fast - stop on first failure
+# bail = true
+
+[install]
+# Use exact versions
+exact = true
+
+[run]
+# Environment file
+env-file = ".env"

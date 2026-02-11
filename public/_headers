@@ -1,0 +1,22 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# NOTE:
+# JS is already hashed by build output (main.<hash>.js), and now CSS is also hashed
+# (styles.<hash>.css, rainbowkit.<hash>.css). Immutable caching is safe.
+# If you ever serve non-hashed CSS/JS again, DO NOT mark it immutable.
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
